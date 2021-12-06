@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+html, button{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background: url("/images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 100%;
+    max-width: 450px;
+    margin: 150px auto;
+}
+
+.hero{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 25px;
+}
+
+.card{
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.05) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.title{
+    margin-bottom: 15px;
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.summary{
+    padding: 0 40px;
+    color: var(--desaturated-blue);
+    line-height: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.info{
+    display: flex;
+    background-color: var(--very-pale-blue);
+    margin:25px;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4{
+    color: var(--dark-blue);
+}
+
+span{
+    color: var(--desaturated-blue);
+}
+
+.change{
+    font-size: 14px;
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+
+.btn-grp{
+    margin: 0 20px;
+}
+
+.btn{
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-primary{
+    background-color: var(--bright-blue);
+    color: white;
+    border-radius: 10px;
+    padding: 15px 50px;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+
+    -webkit-box-shadow: 0px 20px 20px 10px rgba(56,41,224,0.15);
+-moz-box-shadow: 0px 20px 20px 10px rgba(56,41,224,0.15);
+box-shadow: 0px 20px 20px 10px rgba(56,41,224,0.15);
+}
+
+.btn-secondary{
+    color:var(--desaturated-blue);
+    background-color: transparent;
+    border: none;
+    margin-top: 25px;
+    padding-bottom: 35px;
+    font-weight: 900;
+}
+
+
+@media (min-width:375px) {
+    .container{
+        margin: 50px auto;
+        padding: 0px 20px;
+    }
+}
+
